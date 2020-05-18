@@ -168,3 +168,24 @@ input[type=submit]:hover {
 	border: none;
 	border-top: 1px solid rgb(230, 230, 230);
 }
+
+@media (max-width: 550px) {
+	.form-formatting {
+		width: calc(100% - 50px);
+	}
+
+	#home-button {
+		margin-left: 0;
+		font-size: 1rem;
+	}
+
+	#sign-in-button,
+	#sign-out-button {
+		margin-right: 0;
+		font-size: 0.9rem;
+	}
+
+	#new-job-button {
+		font-size: 0.9rem;
+	}
+}
