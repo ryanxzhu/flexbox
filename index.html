@@ -7,15 +7,25 @@
     <title>Playing with Flexbox</title>
 </head>
 <body>
-    <div class="navbar">
-        <div id="box1"><a href="/flexbox">Home</a></div>
-        <div id="box2"><a href="https://www.google.com/" target="_blank"><button>More</button></a></div>
-        <div id="box3"><button>Sign Out</button></div>
-    </div>
-    <div class="navbar">
-        <div id="box4"><a href="/flexbox">Home</a></div>
-        <div id="box5"><a href="https://www.google.com/" target="_blank"><button>More</button></a></div>
-        <div id="box6"><button>Sign Out</button></div>
-    </div>
+    <div class="header-container">
+    <a href="/"><button class="button-link darkBlue" id="home-button"><span class="normalBlue">Cayman</span> Jobs</button></a>
+
+    <nav>
+        <a href="/jobs/new"><button class="button-link" id="new-job-button">Post New Job</button></a>
+
+        <a href="/signin"><button class="button-link" id="sign-in-button">Sign In</button></a>
+    </nav>
+</div>
+    <form class="form-formatting" action="/jobs" method="GET">
+        <div class="searchbox">
+            <svg height="24" viewBox="0 0 24 24" width="24" id="search-icon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            <input type="text" name="searchKeywords" placeholder="Enter Job Title, Company, or Keywords">
+        </div>  
+        <input type="submit" id="searchbar-button" value="Find Jobs">
+</form>
+<hr class="hr-line">
+
+
+
 </body>
 </html>
